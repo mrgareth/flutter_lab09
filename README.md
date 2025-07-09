@@ -11,4 +11,11 @@ permite comunicar Flutter con el código nativo (Swift) para ejecutar operacione
 no puede manejar solo.
 
 CUESTIONARIO
-Si quisieras desarrollar un plugin para acceder a sensores del teléfono ¿Qué tecnología de la sección anterior emplearías? Justificar la respuesta
+Si quisieras desarrollar un plugin para acceder a sensores del teléfono ¿Qué tecnología de la sección anterior emplearías? Justificar 
+la respuesta
+Usaría MethodChannel porque es la forma estándar y sencilla de comunicar Flutter con el código nativo para pedir datos puntuales, como 
+los sensores del teléfono.
+Con MethodChannel puedes llamar funciones nativas que acceden a los sensores (como acelerómetro, GPS, etc.) y devolver esa información a 
+Flutter de forma directa y fácil de manejar.
+Las otras tecnologías (EventChannel, BasicMessageChannel, Pigeon, FFI) tienen usos más específicos o complejos, pero para acceder a 
+sensores y obtener datos puntuales, MethodChannel es la opción más adecuada y simple.
